@@ -1,0 +1,59 @@
+﻿private MyTreeView tvSource;
+        private MyTreeView tvDestination;
+
+this.tvDestination = new MyTreeView();
+            this.destinationTreeImageList = new System.Windows.Forms.ImageList(this.components);
+            this.tvSource = new MyTreeView();
+
+// 
+            // tvDestination
+            // 
+            this.tvDestination.AllowDrop = true;
+            this.tvDestination.ContextMenuStrip = this.contextMenuStrip2;
+            this.tvDestination.Dock = System.Windows.Forms.DockStyle.Right;
+            this.tvDestination.FullRowSelect = true;
+            this.tvDestination.HotTracking = true;
+            this.tvDestination.ImageIndex = 5;
+            this.tvDestination.ImageList = this.destinationTreeImageList;
+            this.tvDestination.ItemHeight = 45;
+            this.tvDestination.LabelEdit = true;
+            this.tvDestination.Location = new System.Drawing.Point(1545, 40);
+            this.tvDestination.Name = "tvDestination";
+            this.tvDestination.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.tvDestination.SelectedImageIndex = 0;
+            this.tvDestination.Size = new System.Drawing.Size(584, 1125);
+            this.tvDestination.TabIndex = 2;
+            this.tvDestination.AfterCollapse += new System.Windows.Forms.TreeViewEventHandler(this.tvDestination_AfterCollapse);
+            this.tvDestination.AfterExpand += new System.Windows.Forms.TreeViewEventHandler(this.tvDestination_AfterExpand);
+            this.tvDestination.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.tvDestination_NodeMouseClick);
+            this.tvDestination.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.tvDestination_NodeMouseDoubleClick);
+            this.tvDestination.DragDrop += new System.Windows.Forms.DragEventHandler(this.tree_DragDrop);
+            this.tvDestination.DragOver += new System.Windows.Forms.DragEventHandler(this.tvDEstination_DragOver);
+            this.tvDestination.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tvDestination_KeyPress);
+            this.tvDestination.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tvDestination_MouseDown);
+            this.tvDestination.Scroll += new MyTreeView.ScrollEventHandler(this.TvDestination_Scroll);
+
+
+// 
+            // tvSource
+            // 
+            this.tvSource.AllowDrop = true;
+            this.tvSource.ContextMenuStrip = this.contextMenuStrip1;
+            this.tvSource.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tvSource.FullRowSelect = true;
+            this.tvSource.HotTracking = true;
+            this.tvSource.ImageIndex = 0;
+            this.tvSource.ImageList = this.sourceTreeImageList;
+            this.tvSource.ItemHeight = 45;
+            this.tvSource.LabelEdit = true;
+            this.tvSource.Location = new System.Drawing.Point(0, 40);
+            this.tvSource.Name = "tvSource";
+            this.tvSource.SelectedImageIndex = 0;
+            this.tvSource.Size = new System.Drawing.Size(656, 1125);
+            this.tvSource.TabIndex = 1;
+            this.tvSource.AfterCollapse += new System.Windows.Forms.TreeViewEventHandler(this.tvSource_AfterCollapse);
+            this.tvSource.AfterExpand += new System.Windows.Forms.TreeViewEventHandler(this.tvSource_AfterExpand);
+            this.tvSource.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.tvSource_NodeMouseClick);
+            this.tvSource.DragDrop += new System.Windows.Forms.DragEventHandler(this.tree_DragDrop);
+            this.tvSource.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tvSource_MouseDown);
+            this.tvSource.Scroll += new MyTreeView.ScrollEventHandler(this.TvSource_Scroll);

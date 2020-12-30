@@ -1,0 +1,58 @@
+﻿
+TODO
+- Add menu to open and save data
+
+
+Source
+========
+
+
+
+- Display
+	- Just my node links
+- Import
+	- Json File
+	- Xml File
+	- Test File
+
+
+
+
+Destination
+===========
+
+- Display
+	- Just my node links
+- Import
+	- Json File
+	- Xml File
+	- Test File
+- Export
+	- To Excel
+	- To Word
+
+
+
+
+Done
+====
+- Double click destination node to see status
+- Show icon on destination node to show status
+- Add multiple attributes to source tree at once
+- Add multiple attributes to destination tree at once
+- Fix drag drop to inc all destination
+- Add highlight node clicked lines
+- Save entire model to file
+- Load entire model from file
+
+- Nodes
+	- Move up
+	- Move down
+	- Remove
+
+- Nodes
+	- Move up
+	- Move down
+	- Remove
+- Map
+	- Remove link from source
